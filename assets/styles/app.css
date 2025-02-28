@@ -1,3 +1,28 @@
 body {
-    background-color: skyblue;
+    font-family: LandingPageFont, serif;
+    background-image: url("../images/background/background.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    text-align: center;
+}
+
+@font-face {
+    font-family: LandingPageFont;
+    src: url("../fonts/Champilon.otf");
+}
+
+.overlay-landing-page {
+    align-self: center;
+    background-color: rgba(100, 100, 100, .6);
+    border: 1px solid black;
+}
+
+.overlay-landing-page-image {
+    height: 250px;
+    object-fit: cover;
+}
+
+.overlay-landing-page h1 {
+    color: white;
+    font-size: xxx-large;
 }
