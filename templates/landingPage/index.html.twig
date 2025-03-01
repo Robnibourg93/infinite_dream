@@ -1,7 +1,22 @@
 {% extends "base.html.twig" %}
 {% block content %}
-    <div class="overlay-landing-page">
-        <h1>Infinite Dream</h1>
-        <img src="{{ asset('images/logo/wow-logo-white.png') }}" alt="wow-logo" class="overlay-landing-page-image">
+    <div class="content">
+        <div class="welcomeText">
+            <div class="title">
+                <h1 class="greet">Infinite Dream</h1>
+            </div>
+            <div class="subText">
+                <div class="subTexts">
+                    <p class="soon">A World of Warcraft Guild</p>
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}
+{% block footer %}
+    <div class="footer">
+        <div class="warcraftLogo">
+        </div>
+    </div>
+
+{% endblock%}

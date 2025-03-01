@@ -1,28 +1,156 @@
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+@import url(https://fonts.googleapis.com/css?family=Junge);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: auto;
+}
+
 body {
-    font-family: LandingPageFont, serif;
-    background-image: url("../images/background/background.png");
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    margin-top: 100px;
+    background: url('../images/background/background.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: junge, georgia;
     text-align: center;
 }
 
-@font-face {
-    font-family: LandingPageFont;
-    src: url("../fonts/Champilon.otf");
+
+/* brandico */
+[class*="brandico-"]:before {
+    font-family: 'brandico', sans-serif;
 }
 
-.overlay-landing-page {
-    align-self: center;
-    background-color: rgba(100, 100, 100, .6);
-    border: 1px solid black;
+
+.content {
+    max-width: 40%;
+    max-height: 50%;
+    margin: auto;
 }
 
-.overlay-landing-page-image {
-    height: 250px;
-    object-fit: cover;
+.welcomeText {
+    width: 100%;
 }
 
-.overlay-landing-page h1 {
+/*title text*/
+.title {
+    height: 100px;
+    position: relative;
+    border-bottom: 1px solid;
+    overflow: hidden;
     color: white;
-    font-size: xxx-large;
+}
+
+.greet {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    font-size: 70px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    transition: all 1.0s;
+}
+
+/*taglines*/
+.subText {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    font-size: 50px;
+    overflow: hidden;
+    color: white;
+}
+
+.subText p {
+    height: 100%;
+    line-height: 100px;
+    text-align: center;
+
+}
+
+.subTexts {
+    width: 100%;
+    position: absolute;
+    bottom: 100%;
+    text-align: center;
+    overflow: hidden;
+    transition: all 1.0s;
+}
+
+.warcraftLogo {
+    height: 400px;
+    width: 500px;
+    background: url("../images/logo/wow-logo-white.png")no-repeat center center;
+    background-size: cover;
+    margin: auto;
+}
+
+.footer {
+    height: fit-content;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+@media screen and (max-width: 1200px) {
+    .greet {
+        font-size: 30px
+    }
+    .subTexts p {
+        font-size: 20px
+    }
+
+}
+
+
+@media screen and (max-width: 930px) {
+    .content {
+        max-width: 60%;
+        max-height: 70%;
+        margin: 100px auto;
+    }
+    .greet {
+        font-size: 30px
+    }
+    .subTexts p {
+        font-size: 20px
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .title, .subText, .sub {
+        background: rgba(255, 255, 255, .3);
+    }
+    .content {
+        max-width: 80%;
+        max-height: 90%;
+        margin: 100px auto;
+    }
+
+    .title {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .subText {
+        border-radius: 0 0 20px 20px;
+    }
+
+    .sub {
+        border: 1px solid;
+    }
+
+    .greet {
+        font-size: 20px
+    }
+
+    .subTexts p {
+        font-size: 15px;
+    }
+
 }
